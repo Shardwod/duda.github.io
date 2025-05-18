@@ -1,0 +1,204 @@
+body { 
+    margin: 0;
+    background-image: url(papel-grueso-blanco.jpg);
+    background-repeat: repeat;
+    background-size: 150%;
+}
+
+.Barra1 { 
+    background-color:rgb(56, 27, 92);
+    height: 40px;
+    width: 100%;
+}
+.Barra2 { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(131, 70, 205);
+    height: 150px;
+    width: 100%; 
+    
+}
+.Barra2 h1 {
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Barra3 {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(24, 2, 51);
+    height: 50px;
+    width: 100%; 
+}
+
+.Barra3 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+          }
+.Barra3 a:hover {
+            color: #00c3ff;
+
+}
+.container {
+  display: grid; 
+  grid-auto-columns: minmax(20px, 60px) 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 50%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Foto Datos"; 
+}
+.Foto { grid-area: Foto; }
+.Foto img{
+    margin: 0px;
+max-width:max-content;
+border-radius: 5px;}
+.Datos { grid-area: Datos;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(247, 243, 238);
+    margin: 1px;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+ }
+ .container2 {  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  grid-template-areas:
+    "Parte1 Imagen1"
+    "Parte2 Imagen2"
+    "Parte3 Imagen3";
+}
+
+.Parte1 { grid-area: Parte1;
+color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 black,
+     1px  1px 0 black;
+} 
+
+.Parte2 { grid-area: Parte2; 
+color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.Parte3 { grid-area: Parte3;
+
+color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 black,
+     1px  1px 0 black;
+} 
+
+.Imagen1 { grid-area: Imagen1;
+margin: 0px;
+
+border-radius: 5px;
+ }
+
+.Imagen2 { grid-area: Imagen2;
+margin: 0px;
+max-width:max-content;
+border-radius: 5px; }
+
+.Imagen3 { grid-area: Imagen3; 
+margin: 0px;
+max-width:max-content;
+border-radius: 5px;}
+
+.container3 {  display: grid;
+  grid-template-columns: 1fr 70%;
+  grid-template-rows: 1fr 30%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  grid-template-areas:
+    "Tomate Durzno"
+    "coco Pina";
+}
+
+.Tomate { grid-area: Tomate;
+margin: 0px;
+max-width:max-content;
+border-radius: 5px; }
+
+.Durzno { grid-area: Durzno; 
+color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 black,
+     1px  1px 0 black;}
+
+.Pina { grid-area: Pina;
+color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 black,
+     1px  1px 0 black; }
+
+.coco { grid-area: coco;
+margin: 0px;
+max-width:max-content;
+border-radius: 5px; }
+.container5 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 7px 9px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  grid-template-areas:
+    "Hil1 Hil2 Hil3"
+    "Hil4 Hil5 hil6"
+    "hil7 hil8 hil9";
+}
+
+.Hil1 { grid-area: Hil1; }
+.Hil1 img, .Hil2 img, .Hil3 img, .Hil4 img, .Hil5 img, .hil6 img, .hil7 img, .hil8 img, .hil9 img {
+    height: 100%;
+    width: 100%;
+}
+.Hil2 { grid-area: Hil2; }
+
+.Hil3 { grid-area: Hil3; }
+
+.Hil4 { grid-area: Hil4; }
+
+.Hil5 { grid-area: Hil5; }
+
+.hil6 { grid-area: hil6; }
+
+.hil7 { grid-area: hil7; }
+
+.hil8 { grid-area: hil8; }
+
+.hil9 { grid-area: hil9; }
+.Hil1 iframe, .Hil2 iframe, .Hil3 iframe, .Hil4 iframe, .Hil5 iframe, .hil6 iframe, .hil7 iframe, .hil8 iframe, .hil9 iframe {
+    height: 100%;
+    width: 100%;
+}
+
